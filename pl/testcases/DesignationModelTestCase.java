@@ -1,0 +1,27 @@
+import java.awt.*;
+import javax.swing.*;
+import com.earl.hr.pl.model.*;
+import com.earl.hr.bl.exceptions.*;
+class DesignationModelTestCase extends JFrame
+{
+private JTable tb;
+private JScrollPane jsp;
+private DesignationModel designationModel;
+private Container container;
+DesignationModelTestCase()
+{
+designationModel=new DesignationModel();  //a lot is happenning here
+tb=new JTable(designationModel);
+jsp=new JScrollPane(tb,ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+container=getContentPane();
+container.setLayout(new BorderLayout());
+container.add(jsp,BorderLayout.CENTER);
+setLocation(100,200);
+setSize(500,400);
+setVisible(true);
+}
+public static void main(String gg[])
+{
+DesignationModelTestCase dmtc=new DesignationModelTestCase();
+}
+}
