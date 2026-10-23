@@ -30,9 +30,8 @@
 
 https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
-[**Watch the Full Project Demonstration on YouTube**](https://youtu.be/goCpFjn7cFg?si=hYMZKOQlXfSxPs7m)
-
-[**View Project Documentation (PDF)**](https://drive.google.com/file/d/17aw3mBMUyqxeWiwQrcKB0Uq0Bjf4Mcgz/view?usp=sharing)
+[![YouTube Demonstration](https://img.shields.io/badge/YouTube-Full_Demonstration-FF0000?style=flat&logo=youtube&logoColor=white)](https://youtu.be/goCpFjn7cFg?si=hYMZKOQlXfSxPs7m)
+[![Project Documentation](https://img.shields.io/badge/Google_Drive-Project_Documentation-4285F4?style=flat&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/17aw3mBMUyqxeWiwQrcKB0Uq0Bjf4Mcgz/view?usp=sharing)
 
 ---
 
