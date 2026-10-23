@@ -14,11 +14,13 @@
 
 ## `ABOUT`
 
-`The Human Resource Management System is a Java-based application designed to manage employee and designation records using a layered architecture.`
+`The Human Resource Management System is a Java-based project designed to demonstrate modular software development, layered architecture, and the distribution of development responsibilities within a programming team.`
 
-`The application separates business logic, data access, database operations, and presentation responsibilities into independent layers.`
+`The primary objective of this project is to illustrate how a senior or higher-level programmer can design a module, define its interfaces and responsibilities, and distribute the implementation work among junior or lower-level programmers. By following predefined structures and interfaces, developers can create additional modules by reusing existing code, making the necessary modifications, and implementing module-specific logic.`
 
-`The project demonstrates a transition from file-based storage to SQL database storage by changing the database implementation and its required dependency while keeping the higher-level application layers largely unchanged.`
+`The project demonstrates how a well-defined architecture, reusable components, and clear interfaces can simplify development, promote consistency, and allow multiple programmers to work on different modules without needing to understand the complete internal implementation of every layer.`
+
+`The application manages employee and designation records through four layers: Business Layer (BL), Data Layer (DL), Database Data Layer (DBDL), and Presentation Layer (PL). It also demonstrates the separation of business logic from database implementation by transitioning from file-based storage to SQL database storage while keeping the higher-level layers largely unchanged.`
 
 ---
 
