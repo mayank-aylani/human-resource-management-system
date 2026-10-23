@@ -12,17 +12,19 @@
 
 ---
 
-## About
+## ABOUT
 
-The Human Resource Management System is a Java-based project designed to manage employee and designation records. It follows a layered architecture that separates business logic, data access, database operations, and presentation responsibilities.
+`The Human Resource Management System is a Java-based application designed to manage employee and designation records using a layered architecture.`
 
-The project demonstrates the transition from file-based storage to SQL database storage by changing the database implementation and its required dependency while keeping the higher-level application layers largely unchanged.
+`The application separates business logic, data access, database operations, and presentation responsibilities into independent layers.`
+
+`The project demonstrates a transition from file-based storage to SQL database storage by changing the database implementation and its required dependency while keeping the higher-level application layers largely unchanged.`
 
 ---
 
-## Project Demonstration
+## PROJECT DEMONSTRATION
 
-`Short Project Preview`
+`A short preview of the Human Resource Management System project.`
 
 https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
@@ -32,45 +34,40 @@ https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
 ---
 
-## Architecture
+## ARCHITECTURE
 
-`BL — Business Layer`
+**`BL — Business Layer`**
 
-Handles business rules and application logic.
+- `Handles business rules and application logic.`
 
-`DL — Data Layer`
+**`DL — Data Layer`**
 
-Defines data access interfaces and operations.
+- `Defines data access interfaces and operations.`
 
-`DBDL — Database Data Layer`
+**`DBDL — Database Data Layer`**
 
-Implements database operations using SQL.
+- `Implements database operations using SQL.`
 
-`PL — Presentation Layer`
+**`PL — Presentation Layer`**
 
-Contains presentation components and user interaction. Designation presentation functionality has been demonstrated; the employee presentation layer is not yet implemented.
-
----
-
-## Features
-
-`Employee Management` · `Designation Management`
-
-`Employee Lookup by ID` · `PAN/Aadhaar Validation`
-
-`Designation Lookup by Code and Title`
-
-`Designation-Based Employee Retrieval`
-
-`Duplicate Employee ID Checks`
-
-`SQL Database Integration`
-
-`Employee and Designation Test Cases`
+- `Contains presentation components and user interaction. Designation presentation functionality has been demonstrated; the employee presentation layer is not yet implemented.`
 
 ---
 
-## Technologies Used
+## FEATURES
+
+- `Employee record management and lookup by employee ID.`
+- `Designation record management and lookup by code and title.`
+- `Employee lookup by PAN number and Aadhaar card number.`
+- `Duplicate employee ID validation.`
+- `Duplicate PAN number and Aadhaar card number validation.`
+- `Retrieval of employees based on designation code.`
+- `SQL database integration.`
+- `Test cases for employee and designation operations.`
+
+---
+
+## TECHNOLOGIES USED
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat&logo=gradle&logoColor=white)
@@ -78,14 +75,14 @@ Contains presentation components and user interaction. Designation presentation 
 ![JDBC](https://img.shields.io/badge/JDBC-4479A1?style=flat)
 ![SQL](https://img.shields.io/badge/SQL-6C3483?style=flat)
 
-- `Java` — Application development and object-oriented programming.
-- `Gradle` — Build and dependency management.
-- `JDBC` — Java database connectivity.
-- `MySQL / SQL` — Relational database storage and operations.
+- `Java — Application development and object-oriented programming.`
+- `Gradle — Build and dependency management.`
+- `JDBC — Connectivity between Java applications and databases.`
+- `MySQL / SQL — Relational database storage and query execution.`
 
 ---
 
-## Project Structure
+## PROJECT STRUCTURE
 
 ```text
 human-resource-management-system/
@@ -96,23 +93,31 @@ human-resource-management-system/
 └── README.md
 ```
 
-The directory names above represent the conceptual project structure. Adjust them if the actual repository uses different names.
+`The structure above is conceptual. Directory names should match the actual repository.`
 
 ---
 
-## Testing
+## TESTING
 
-Employee and designation test cases are used to verify data-layer operations and validation rules, including duplicate employee identifiers and PAN/Aadhaar numbers.
+- `Designation test cases for data-layer operations and validation.`
+- `Employee test cases for data-layer operations and validation.`
+- `Validation of duplicate employee identifiers, PAN numbers, and Aadhaar numbers.`
 
 ---
 
-## Learning Outcomes
+## KEY CONCEPTS
 
-`Layered Architecture` · `Separation of Concerns`
+- `Layered software architecture and separation of concerns.`
+- `Java interfaces and data access abstraction.`
+- `Exception handling and modular application design.`
+- `Database connectivity and SQL-based persistence.`
+- `Separation of business logic from database implementation.`
 
-`Java Interfaces` · `Data Access Abstraction`
+---
 
-`Exception Handling` · `Database Connectivity`
+## LEARNING OUTCOMES
 
-`Modular Application Design`
+`Practical experience in designing layered Java applications and separating business logic from data access.`
+
+`Understanding database integration, Java interfaces, validation, exception handling, and modular software development.`
 
