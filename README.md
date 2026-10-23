@@ -12,7 +12,7 @@
 
 ---
 
-## ABOUT
+## `ABOUT`
 
 `The Human Resource Management System is a Java-based application designed to manage employee and designation records using a layered architecture.`
 
@@ -22,7 +22,7 @@
 
 ---
 
-## PROJECT DEMONSTRATION
+## `PROJECT DEMONSTRATION`
 
 `A short preview of the Human Resource Management System project.`
 
@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
 ---
 
-## ARCHITECTURE
+## `ARCHITECTURE`
 
 **`BL — Business Layer`**
 
@@ -54,7 +54,7 @@ https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
 ---
 
-## FEATURES
+## `FEATURES`
 
 - `Employee record management and lookup by employee ID.`
 - `Designation record management and lookup by code and title.`
@@ -67,7 +67,7 @@ https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
 ---
 
-## TECHNOLOGIES USED
+## `TECHNOLOGIES USED`
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat&logo=gradle&logoColor=white)
@@ -82,7 +82,7 @@ https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
 ---
 
-## PROJECT STRUCTURE
+## `PROJECT STRUCTURE`
 
 ```text
 human-resource-management-system/
@@ -97,7 +97,7 @@ human-resource-management-system/
 
 ---
 
-## TESTING
+## `TESTING`
 
 - `Designation test cases for data-layer operations and validation.`
 - `Employee test cases for data-layer operations and validation.`
@@ -105,7 +105,7 @@ human-resource-management-system/
 
 ---
 
-## KEY CONCEPTS
+## `KEY CONCEPTS`
 
 - `Layered software architecture and separation of concerns.`
 - `Java interfaces and data access abstraction.`
@@ -115,7 +115,7 @@ human-resource-management-system/
 
 ---
 
-## LEARNING OUTCOMES
+## `LEARNING OUTCOMES`
 
 `Practical experience in designing layered Java applications and separating business logic from data access.`
 
