@@ -37,21 +37,17 @@ https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
 ## `ARCHITECTURE`
 
-**`BL — Business Layer`**
+`The project follows a layered architecture consisting of the Business Layer (BL), Data Layer (DL), Database Data Layer (DBDL), and Presentation Layer (PL). Each layer has a specific responsibility, allowing the application to remain modular and easier to maintain.`
 
-- `Handles business rules and application logic.`
+`Data Layer (DL):` The initial implementation uses file handling to store and manipulate designation and employee records in `designation.data` and `employee.data` files. DAO interfaces define the operations required by the higher layers, while the underlying implementation handles data retrieval, insertion, updating, and deletion.
 
-**`DL — Data Layer`**
+`Business Layer (BL):` The `DesignationManager` and `EmployeeManager` classes follow the Singleton pattern, providing a shared manager instance for their respective modules. When a manager instance is created, its `getAll()` method calls the corresponding DL DAO method and populates a `Set` with the available records. This keeps the records readily available in memory for faster retrieval and reduces the need to repeatedly fetch all records from the data layer.
 
-- `Defines data access interfaces and operations.`
+`Presentation Layer (PL):` The presentation layer contains the model and user interface components responsible for displaying information and handling user interactions. It communicates with the business layer rather than directly accessing the underlying storage implementation.
 
-**`DBDL — Database Data Layer`**
+`Database Data Layer (DBDL):` The database implementation uses JDBC to connect the Java application to a SQL database and execute database operations. By replacing the file-based DAO implementation with the JDBC-based DBDL implementation and its required dependency, the application can use SQL storage while keeping the higher-level layers largely unchanged.
 
-- `Implements database operations using SQL.`
-
-**`PL — Presentation Layer`**
-
-- `Contains presentation components and user interaction. Designation presentation functionality has been demonstrated; the employee presentation layer is not yet implemented.`
+`This design demonstrates separation of concerns, data access abstraction, in-memory data retrieval, and the ability to change the underlying storage implementation with minimal impact on the business and presentation layers.`
 
 ---
 
@@ -91,34 +87,8 @@ human-resource-management-system/
 ├── DL/       # Data Layer
 ├── DBDL/     # Database Data Layer
 ├── PL/       # Presentation Layer
+|── COMMON/   # Common across Layers (ENUM GENDER)
 └── README.md
 ```
 
 `The structure above is conceptual. Directory names should match the actual repository.`
-
----
-
-## `TESTING`
-
-- `Designation test cases for data-layer operations and validation.`
-- `Employee test cases for data-layer operations and validation.`
-- `Validation of duplicate employee identifiers, PAN numbers, and Aadhaar numbers.`
-
----
-
-## `KEY CONCEPTS`
-
-- `Layered software architecture and separation of concerns.`
-- `Java interfaces and data access abstraction.`
-- `Exception handling and modular application design.`
-- `Database connectivity and SQL-based persistence.`
-- `Separation of business logic from database implementation.`
-
----
-
-## `LEARNING OUTCOMES`
-
-`Practical experience in designing layered Java applications and separating business logic from data access.`
-
-`Understanding database integration, Java interfaces, validation, exception handling, and modular software development.`
-
