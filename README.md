@@ -37,15 +37,15 @@ https://github.com/user-attachments/assets/cbfa28b6-2cd5-4fee-b631-5ff88e0eecd3
 
 ## `ARCHITECTURE`
 
-`The project follows a layered architecture consisting of the Business Layer (BL), Data Layer (DL), Database Data Layer (DBDL), and Presentation Layer (PL). Each layer has a specific responsibility, allowing the application to remain modular and easier to maintain.`
+`The project follows a layered architecture consisting of the Business Layer (BL), Data Layer (DL), Database Data Layer (DBDL), and Presentation Layer (PL). Each layer has a specific responsibility, making the application modular and easier to maintain.`
 
-`Data Layer (DL):` The initial implementation uses file handling to store and manipulate designation and employee records in `designation.data` and `employee.data` files. DAO interfaces define the operations required by the higher layers, while the underlying implementation handles data retrieval, insertion, updating, and deletion.
+`Data Layer (DL): The initial implementation uses file handling to store and manipulate designation and employee records in designation.data and employee.data files. DAO interfaces define the operations required by higher layers, while the implementation handles data insertion, retrieval, updating, and deletion.`
 
-`Business Layer (BL):` The `DesignationManager` and `EmployeeManager` classes follow the Singleton pattern, providing a shared manager instance for their respective modules. When a manager instance is created, its `getAll()` method calls the corresponding DL DAO method and populates a `Set` with the available records. This keeps the records readily available in memory for faster retrieval and reduces the need to repeatedly fetch all records from the data layer.
+`Business Layer (BL): The DesignationManager and EmployeeManager classes follow the Singleton pattern, providing a shared instance for each module. When a manager instance is created, its getAll() method calls the corresponding DL DAO method and populates a Set with the available records. These records remain available in memory for faster retrieval, avoiding repeated calls to fetch all records from the data layer.`
 
-`Presentation Layer (PL):` The presentation layer contains the model and user interface components responsible for displaying information and handling user interactions. It communicates with the business layer rather than directly accessing the underlying storage implementation.
+`Presentation Layer (PL): The presentation layer contains model and user interface components responsible for displaying information and handling user interactions. It communicates with the business layer instead of directly accessing the storage implementation.`
 
-`Database Data Layer (DBDL):` The database implementation uses JDBC to connect the Java application to a SQL database and execute database operations. By replacing the file-based DAO implementation with the JDBC-based DBDL implementation and its required dependency, the application can use SQL storage while keeping the higher-level layers largely unchanged.
+`Database Data Layer (DBDL): The database implementation uses JDBC to connect the Java application to a SQL database and execute database operations. By replacing the file-based DAO implementation with the JDBC-based DBDL implementation and its required dependency, the application can use SQL storage while keeping the higher-level layers largely unchanged.`
 
 `This design demonstrates separation of concerns, data access abstraction, in-memory data retrieval, and the ability to change the underlying storage implementation with minimal impact on the business and presentation layers.`
 
